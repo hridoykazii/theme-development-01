@@ -1,0 +1,17 @@
+.text_field {
+    height: 40px;
+    width: 20%;
+    font-size: 16px;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: var(--border-color2);
+    padding-left: 10px;
+    outline: none;
+    background-color: var(--input-bg-color);
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+.text_field::placeholder {
+    font-size: 16px;
+    color: var(--placeholder-color);
+}

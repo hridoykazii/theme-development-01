@@ -1,0 +1,41 @@
+/* basic custom chip  */
+.customChip {
+    background-color: #2F3349;
+    color: rgb(209, 209, 209);
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 0.8125rem;
+
+}
+
+/* .chip-contained {
+    background-color: bisque;
+    color: whitesmoke;
+    padding: 2px 5px;
+  } */
+
+.chip-outlined {
+    background-color: transparent;
+    border: 0.5px solid #2F3349;
+    padding: 5px 10px;
+}
+
+/* Outlined chip disabled state */
+.customChip-outlined-disabled {
+    /* cursor: not-allowed; */
+    color: #9e9e9e; /* Disabled state text color */
+    border: 1px solid #b3c3e0; /* Disabled state border */
+    background-color: transparent;
+}
+
+/* Disabled default chip */
+.customChip-disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    color: var(--btn-disabled-text-color, #9e9e9e);
+    border: var(--btn-disabled-border, none);
+}
+
+
+

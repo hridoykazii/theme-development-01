@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --primary-color: rgba(90, 74, 210, 1);
+  --secondary-color: rgba(146, 118, 241, 1);
+  --bg-color: #1F2336;
+  --btn-bg-color: #313852;
+  --input-bg-color: #40405647;
+  --active-color: #797FFF;
+  --color-white: #ffffff;
+  --semi-white: #b2b2b4;
+  --text-color: #666D8D;
+  --card-color: #25293D;
+  --icon-color: #72799B;
+  --border-color: #2B3046;
+  --border-color2: #797d92;
+  --selectItem-hover: #5a5a5ab5;
+  --placeholder-color: #81828B;
+  /* Common Color */
+  --success-color: "#28C76F";
+  --warning-color: "#FF9F43";
+  --danger-color: "#EA5455";
+  --info-color: "#00CFE8";
+
+  /* Button badge color */
+  --button-badge-success: "#DCF6E8";
+  --button-badge-warning: "#FFF0E1";
+  --button-badge-danger: "#FCE4E4";
+  --button-badge-info: "#D6F7FB";
+
+  /* Button color */
+  --button-primary: var(--primary-color);
+  --button-secondary: var(var(--secondary-color));
+  --button-success: var(var(--success-color));
+  --button-warning: var(var(--warning-color));
+  --button-danger: var(var(--danger-color));
+  --button-info: var(var(--info-color));
+}
+
+ /* alert color  */
+ 
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+code {
+  color: var(--active-color);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: var(--secondary-color);
+}
+
+.CodeBlockClass {
+  position: relative;
+}
+
+.CopyButtonClass {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+/* --------------------------------------Custom text field style six---------------------------------------- */
+.card-slide {
+  display: inline-block;
+  width: 350px;
+  padding: 10px 0 10px 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: var(--dark-font-color);
+  background: var(--light-color);
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  text-indent: 115px;
+  transition: all .3s ease-in-out;
+
+  &::-webkit-input-placeholder {
+    color: var(--light-color);
+    text-indent: 0;
+    font-weight: 300;
+  }
+
+  +label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 15px;
+    color: var(--white-color);
+    text-shadow: 0 1px 0 rgba(19, 74, 70, .4);
+    background: var(--yellow-color);
+    transition: all .3s ease-in-out;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transform-origin: right center;
+    transform: perspective(300px) scaleX(1) rotateY(0deg);
+  }
+}
+
+span:nth-child(2) .card-slide {
+  text-indent: 55px;
+}
+
+span:nth-child(3) .card-slide {
+  text-indent: 150px;
+}
+
+span:nth-child(2) .card-slide:focus,
+span:nth-child(2) .card-slide:active,
+span:nth-child(3) .card-slide:focus,
+span:nth-child(3) .card-slide:active {
+  text-indent: 0;
+}
+
+.card-slide:focus,
+.card-slide:active {
+  color: var(--dark-font-color);
+  text-indent: 0;
+  background: var(--light-color);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  &::-webkit-input-placeholder {
+    color: #aaa;
+  }
+
+  +label {
+    transform: perspective(600px) translateX(-100%) rotateY(80deg);
+  }
+}
